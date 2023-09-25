@@ -1,4 +1,5 @@
 const CategoryList = () => {
+    
     return (
         <div>
             <h1 className="text-center text-5xl">Job Category List</h1>
