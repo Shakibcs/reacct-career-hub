@@ -9,12 +9,15 @@ import{
 import Footer from './component/Footer/Footer.jsx';
 import Home from './component/Home/Home.jsx';
 import Root from './component/Root/Root.jsx';
+import AppliedJobs from './component/AppliedJobs/AppliedJobs';
+import ErrorPage from './component/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/footer",
         element: <Footer></Footer>
+      },
+      {
+        path: "/applied",
+        element: <AppliedJobs></AppliedJobs>
       }
     ] 
   }
